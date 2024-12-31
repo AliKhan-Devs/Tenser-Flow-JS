@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traffic Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Traffic Analyzer</h1>
+      
+      <div class="input-controls">
+        <button id="cameraBtn">Use Camera</button>
+        <input type="file" id="videoUpload" accept="video/*">
+        <label for="videoUpload">Upload Video</label>
+      </div>
+
+      <div class="video-container">
+        <video id="video" loop  controls></video>
+        <canvas id="canvas"></canvas>
+      </div>
+
+      <div class="stats">
+        <h2>Traffic Statistics</h2>
+        <div id="stats-container">
+          <div class="stat-item">
+            <span>Cars:</span>
+            <span id="carCount">0</span>
+          </div>
+          <div class="stat-item">
+            <span>Trucks:</span>
+            <span id="truckCount">0</span>
+          </div>
+          <div class="stat-item">
+            <span>Motorcycles:</span>
+            <span id="motorcycleCount">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Image & Video Classifier</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>AI Image & Video Classifier</h1>
+      
+      <div class="input-section">
+        <div class="image-input">
+          <h2>Image Classification</h2>
+          <input type="file" id="imageInput" accept="image/*">
+          <div id="imagePreview"></div>
+          <div id="imageResults" class="results"></div>
+        </div>
+
+        <div class="video-input">
+          <h2>Video Classification</h2>
+          <button id="startVideo">Start Camera</button>
+          <video id="video" autoplay playsinline muted></video>
+          <div id="videoResults" class="results"></div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
